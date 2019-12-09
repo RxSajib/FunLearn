@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "815274151085",
+    "firebase_url": "https://funlearn-cabd1.firebaseio.com",
+    "project_id": "funlearn-cabd1",
+    "storage_bucket": "funlearn-cabd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815274151085:android:c1ff075dc8711c3e3c4a24",
+        "android_client_info": {
+          "package_name": "com.example.funlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815274151085-vlfdvqombhdd2viv2679mmvmm9380oao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.funlearn",
+            "certificate_hash": "72140c0ca2e5270977d325fef5724e31ba8e88d8"
+          }
+        },
+        {
+          "client_id": "815274151085-52geku12goav9ct7lq4en9f7ej280148.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoZXQGCARHXNRnjVok3U7WmTFQh9eGBl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815274151085-52geku12goav9ct7lq4en9f7ej280148.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

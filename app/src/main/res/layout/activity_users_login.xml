@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersLoginActivity">
+
+    <EditText
+        android:id="@+id/UserEmailID"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+
+      <EditText
+          android:id="@+id/UserPassworID"
+        android:layout_below="@+id/UserEmailID"
+        android:hint="Enter Password"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+          android:inputType="textPassword"
+          android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Login"
+        android:layout_below="@+id/UserPassworID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/NLogin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="New Account"
+        android:layout_below="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</RelativeLayout>
