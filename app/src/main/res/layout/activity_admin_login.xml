@@ -38,7 +38,7 @@
         android:id="@+id/AdminPaswordIFD"
         android:padding="10dp"
         android:layout_below="@+id/AdminEmailID"
-        android:hint="Enter email"
+        android:hint="Enter password"
         android:layout_marginLeft="20dp"
         android:inputType="textPassword"
         android:layout_marginRight="20dp"
