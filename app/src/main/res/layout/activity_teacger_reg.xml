@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".UsersLoginActivity"
-    android:background="@drawable/whatsappimage">
+    tools:context=".TeacgerReg">
 
     <EditText
-        android:id="@+id/UserEmailID"
+        android:id="@+id/UserEmailIDf"
         android:hint="Enter Email"
         android:padding="10dp"
         android:layout_marginTop="50dp"
@@ -22,15 +20,15 @@
     </EditText>
 
 
-      <EditText
-          android:id="@+id/UserPassworID"
-        android:layout_below="@+id/UserEmailID"
+    <EditText
+        android:id="@+id/UserPassworIDf"
+        android:layout_below="@+id/UserEmailIDf"
         android:hint="Enter Password"
         android:padding="10dp"
         android:singleLine="true"
         android:layout_marginLeft="20dp"
-          android:inputType="textPassword"
-          android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -38,26 +36,30 @@
     </EditText>
 
     <Button
-        android:id="@+id/Login"
+        android:id="@+id/Userreg"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:text="Login"
         android:background="#ff22"
-        android:layout_below="@+id/UserPassworID"
+        android:text="new account"
+        android:layout_below="@+id/UserPassworIDf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
     </Button>
 
+
     <Button
-        android:background="#ff22"
-        android:id="@+id/NLogin"
+        android:id="@+id/IHAveAccount"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
+        android:background="#ff22"
         android:layout_marginLeft="20dp"
-        android:text="New Account"
-        android:layout_below="@+id/Login"
+        android:text="already have a account"
+        android:layout_below="@+id/Userreg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
     </Button>
+
 </RelativeLayout>

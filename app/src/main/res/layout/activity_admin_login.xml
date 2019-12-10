@@ -5,11 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".AdminLoginActivity">
 
     <TextView
         android:id="@+id/AdminLogin"
         android:textSize="22dp"
+        android:textColor="#ff22"
         android:layout_marginLeft="20dp"
         android:text="Admin Login"
         android:layout_marginTop="15dp"
@@ -50,6 +52,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="Login"
+        android:background="#ff22"
         android:layout_below="@+id/AdminPaswordIFD"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"

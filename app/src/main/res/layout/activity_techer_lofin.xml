@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".UsersLoginActivity"
-    android:background="@drawable/whatsappimage">
+    tools:context=".TecherLofin">
+    <TextView
+        android:id="@+id/AdminLogin"
+        android:textSize="22dp"
+        android:textColor="#ff22"
+        android:layout_marginLeft="20dp"
+        android:text="Teacher Login"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
 
     <EditText
-        android:id="@+id/UserEmailID"
-        android:hint="Enter Email"
+        android:layout_below="@+id/AdminLogin"
+        android:id="@+id/AdminEmailID"
         android:padding="10dp"
-        android:layout_marginTop="50dp"
-        android:singleLine="true"
+        android:hint="Enter email"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
@@ -22,15 +31,13 @@
     </EditText>
 
 
-      <EditText
-          android:id="@+id/UserPassworID"
-        android:layout_below="@+id/UserEmailID"
-        android:hint="Enter Password"
+    <EditText
+        android:id="@+id/AdminPaswordIFD"
         android:padding="10dp"
-        android:singleLine="true"
+        android:layout_below="@+id/AdminEmailID"
+        android:hint="Enter email"
         android:layout_marginLeft="20dp"
-          android:inputType="textPassword"
-          android:layout_marginTop="10dp"
+        android:inputType="textPassword"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -38,26 +45,15 @@
     </EditText>
 
     <Button
-        android:id="@+id/Login"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
+        android:id="@+id/LLgoinID"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:text="Login"
         android:background="#ff22"
-        android:layout_below="@+id/UserPassworID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </Button>
-
-    <Button
-        android:background="#ff22"
-        android:id="@+id/NLogin"
+        android:layout_below="@+id/AdminPaswordIFD"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="New Account"
-        android:layout_below="@+id/Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
     </Button>
 </RelativeLayout>

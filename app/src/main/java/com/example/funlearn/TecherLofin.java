@@ -1,27 +1,22 @@
 package com.example.funlearn;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class AdminLoginActivity extends AppCompatActivity {
-
+public class TecherLofin extends AppCompatActivity {
     private EditText email, password;
     private Button login;
     private DatabaseReference MAdmindatabase;
@@ -31,13 +26,13 @@ public class AdminLoginActivity extends AppCompatActivity {
     private DatabaseReference Mpost;
     private String emailget, Passwordget;
     private ProgressDialog progressDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_login);
+        setContentView(R.layout.activity_techer_lofin);
 
-        progressDialog = new ProgressDialog(AdminLoginActivity.this);
+
+        progressDialog = new ProgressDialog(TecherLofin.this);
         MAdmindatabase = FirebaseDatabase.getInstance().getReference().child("Admin");
 
         Mpost = FirebaseDatabase.getInstance().getReference().child("Post");
@@ -49,10 +44,10 @@ public class AdminLoginActivity extends AppCompatActivity {
 
                 if(dataSnapshot.exists()){
                     if(dataSnapshot.hasChild("email")){
-                         emailget = dataSnapshot.child("email").getValue().toString();
+                        emailget = dataSnapshot.child("email").getValue().toString();
                     }
                     if(dataSnapshot.hasChild("Password")){
-                         Passwordget = dataSnapshot.child("Password").getValue().toString();
+                        Passwordget = dataSnapshot.child("Password").getValue().toString();
                     }
                 }
             }
